@@ -1,4 +1,4 @@
-package com.sha.springbootmicroserviceproduct.entity;
+package com.sha.springbootmicroserviceproduct.Entity;
 
 import lombok.*;
 import org.hibernate.Hibernate;
