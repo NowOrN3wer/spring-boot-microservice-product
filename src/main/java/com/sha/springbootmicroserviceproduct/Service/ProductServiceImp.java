@@ -4,7 +4,6 @@ import com.sha.springbootmicroserviceproduct.Entity.Product;
 import com.sha.springbootmicroserviceproduct.Model.ProductDto;
 import com.sha.springbootmicroserviceproduct.Reposiyory.IProductRepository;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

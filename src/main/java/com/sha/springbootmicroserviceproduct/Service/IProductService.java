@@ -3,7 +3,6 @@ package com.sha.springbootmicroserviceproduct.Service;
 import com.sha.springbootmicroserviceproduct.Model.ProductDto;
 
 import java.util.List;
-import java.util.UUID;
 
 public interface IProductService {
     public ProductDto saveProduct(ProductDto productDto);
