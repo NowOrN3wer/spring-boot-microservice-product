@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cdcf4e7-f2a3-4467-8e87-260dc8159a91" name="Changes" comment="duzenleme">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sha/springbootmicroserviceproduct/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sha/springbootmicroserviceproduct/Controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sha/springbootmicroserviceproduct/Entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sha/springbootmicroserviceproduct/Entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sha/springbootmicroserviceproduct/Entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sha/springbootmicroserviceproduct/Entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sha/springbootmicroserviceproduct/Model/BaseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sha/springbootmicroserviceproduct/Model/BaseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sha/springbootmicroserviceproduct/Service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sha/springbootmicroserviceproduct/Service/IProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sha/springbootmicroserviceproduct/Service/ProductServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sha/springbootmicroserviceproduct/Service/ProductServiceImp.java" afterDir="false" />
-    </list>
+    <list default="true" id="1cdcf4e7-f2a3-4467-8e87-260dc8159a91" name="Changes" comment="uuid kısmı sonra eklenecek" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679426703970</updated>
       <workItem from="1679426705001" duration="5228000" />
-      <workItem from="1679464172483" duration="1436000" />
+      <workItem from="1679464172483" duration="1768000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1679426904212</created>
@@ -183,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679465029179</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="uuid kısmı sonra eklenecek">
+      <created>1679465885926</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679465885926</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +192,7 @@
     <MESSAGE value="Base ve Product entity" />
     <MESSAGE value="Service ve Repository" />
     <MESSAGE value="duzenleme" />
-    <option name="LAST_COMMIT_MESSAGE" value="duzenleme" />
+    <MESSAGE value="uuid kısmı sonra eklenecek" />
+    <option name="LAST_COMMIT_MESSAGE" value="uuid kısmı sonra eklenecek" />
   </component>
 </project>
