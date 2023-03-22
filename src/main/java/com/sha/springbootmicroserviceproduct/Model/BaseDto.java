@@ -8,8 +8,6 @@ import java.util.UUID;
 
 @Data
 public abstract class BaseDto {
-    private UUID uuid;
-
     private Long id;
 
     private Integer version;

@@ -36,12 +36,13 @@ public class ProductServiceImp implements IProductService {
     }
 
     @Override
-    public void deleteProduct(UUID productUuid) {
-        productRepository.deleteById(productUuid);
+    public void deleteProduct(Long id) {
+       productRepository.deleteById(id);
     }
 
     @Override
     public List<ProductDto> findAllProducts() {
-        return productRepository.findAll().stream().map(entity -> modelMapper.map(entity, ProductDto.class)).collect(Collectors.toList());
+        return productRepository.findAll().stream().
+                map(entity -> modelMapper.map(entity, ProductDto.class)).collect(Collectors.toList());
     }
 }

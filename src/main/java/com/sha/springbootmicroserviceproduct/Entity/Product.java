@@ -26,7 +26,7 @@ public class Product extends BaseEntity {
         if (this == o) return true;
         if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
         Product product = (Product) o;
-        return getUuid() != null && Objects.equals(getUuid(), product.getUuid());
+        return getId() != null && Objects.equals(getId(), product.getId());
     }
 
     @Override

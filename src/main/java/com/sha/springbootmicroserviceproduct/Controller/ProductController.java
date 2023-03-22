@@ -10,28 +10,28 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("api/product") //pre path
+@RequestMapping("api/product/") //pre path
 public class ProductController {
     @Autowired
     private IProductService productService;
 
-    @PostMapping
+    @PostMapping("save")
     public ResponseEntity<?> saveProduct(@RequestBody ProductDto productDto) {
         return new ResponseEntity<>(productService.saveProduct(productDto), HttpStatus.CREATED);
     }
 
-    @PutMapping
+    @PutMapping("update")
     public ResponseEntity<?> updateProduct(@RequestBody ProductDto productDto) {
         return new ResponseEntity<>(productService.updateProduct(productDto), HttpStatus.OK);
     }
 
-    @DeleteMapping("{productUuid}")
-    public ResponseEntity<?> deleteProduct(@PathVariable UUID productUuid) {
-        productService.deleteProduct(productUuid);
+    @DeleteMapping("{id}")
+    public ResponseEntity<?> deleteProduct(@PathVariable Long id) {
+        productService.deleteProduct(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @GetMapping
+    @GetMapping("getAll")
     ResponseEntity<?> getAllProducts() {
         return new ResponseEntity<>(productService.findAllProducts(), HttpStatus.OK);
     }

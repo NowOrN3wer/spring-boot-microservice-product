@@ -10,7 +10,7 @@ public interface IProductService {
 
     public ProductDto updateProduct(ProductDto productDto);
 
-    public void deleteProduct(UUID productUuid);
+    public void deleteProduct(Long id);
 
     public List<ProductDto> findAllProducts();
 }

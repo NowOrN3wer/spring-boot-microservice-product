@@ -9,7 +9,6 @@ import org.hibernate.annotations.UpdateTimestamp;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Objects;
-import java.util.UUID;
 
 @Getter
 @Setter
@@ -18,11 +17,7 @@ import java.util.UUID;
 @MappedSuperclass
 public abstract class BaseEntity {
     @Id
-    @GeneratedValue
-    @Column(name = "uuid", updatable = false, nullable = false)
-    private UUID uuid;
-
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", updatable = false, nullable = false)
     private Long id;
 
@@ -43,7 +38,7 @@ public abstract class BaseEntity {
         if (this == o) return true;
         if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
         BaseEntity that = (BaseEntity) o;
-        return getUuid() != null && Objects.equals(getUuid(), that.getUuid());
+        return getId() != null && Objects.equals(getId(), that.getId());
     }
 
     @Override
