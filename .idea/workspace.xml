@@ -4,6 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="1cdcf4e7-f2a3-4467-8e87-260dc8159a91" name="Changes" comment="git ignore">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
     <list default="true" id="1cdcf4e7-f2a3-4467-8e87-260dc8159a91" name="Changes" comment="kullanilmayan import silindi">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     <list default="true" id="1cdcf4e7-f2a3-4467-8e87-260dc8159a91" name="Changes" comment="controller sınıfı eklendi">
@@ -84,7 +89,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "google-java-format.settings",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -113,7 +118,7 @@
     <configuration name="SpringBootMicroserviceProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring-boot-microservice-product.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sha.springbootmicroserviceproduct.SpringBootMicroserviceProductApplication" />
-      <option name="VM_PARAMETERS" value="--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED" />
+      <option name="VM_PARAMETERS" value="--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED -Dserver.port=3333" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,6 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679426703970</updated>
       <workItem from="1679426705001" duration="5228000" />
+      <workItem from="1679464172483" duration="9494000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1679426904212</created>
@@ -162,7 +168,70 @@
       <option name="project" value="LOCAL" />
       <updated>1679431375878</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="duzenleme">
+      <created>1679464951010</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679464951010</updated>
+    </task>
+    <task id="LOCAL-00006" summary="duzenleme">
+      <created>1679465029179</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679465029179</updated>
+    </task>
+    <task id="LOCAL-00007" summary="uuid kısmı sonra eklenecek">
+      <created>1679465885926</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679465885926</updated>
+    </task>
+    <task id="LOCAL-00008" summary="workspace duzenleme">
+      <created>1679465995000</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679465995000</updated>
+    </task>
+    <task id="LOCAL-00009" summary="security">
+      <created>1679467777900</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679467777900</updated>
+    </task>
+    <task id="LOCAL-00010" summary="servisler">
+      <created>1679471679161</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679471679161</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ws">
+      <created>1679472492723</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679472492723</updated>
+    </task>
+    <task id="LOCAL-00012" summary="kullanilmayan importlar silindi">
+      <created>1679473399099</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679473399099</updated>
+    </task>
+    <task id="LOCAL-00013" summary="kullanilmayan import silindi">
+      <created>1679473579136</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679473579136</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +243,14 @@
     <MESSAGE value="db baglantilari" />
     <MESSAGE value="Base ve Product entity" />
     <MESSAGE value="Service ve Repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Service ve Repository" />
+    <MESSAGE value="duzenleme" />
+    <MESSAGE value="uuid kısmı sonra eklenecek" />
+    <MESSAGE value="workspace duzenleme" />
+    <MESSAGE value="security" />
+    <MESSAGE value="servisler" />
+    <MESSAGE value="ws" />
+    <MESSAGE value="kullanilmayan importlar silindi" />
+    <MESSAGE value="kullanilmayan import silindi" />
+    <option name="LAST_COMMIT_MESSAGE" value="kullanilmayan import silindi" />
   </component>
 </project>

@@ -2,19 +2,18 @@ package com.sha.springbootmicroserviceproduct.Controller;
 
 import com.sha.springbootmicroserviceproduct.Model.ProductDto;
 import com.sha.springbootmicroserviceproduct.Service.IProductService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.UUID;
-
 @RestController
 @RequestMapping("api/product/") //pre path
 public class ProductController {
-    @Autowired
-    private IProductService productService;
+    private final IProductService productService;
 
+    ProductController(IProductService productService){
+        this.productService = productService;
+    }
     @PostMapping("save")
     public ResponseEntity<?> saveProduct(@RequestBody ProductDto productDto) {
         return new ResponseEntity<>(productService.saveProduct(productDto), HttpStatus.CREATED);
