@@ -22,14 +22,14 @@ public class ProductServiceImp implements IProductService {
 
     @Override
     public ProductDto saveProduct(ProductDto productDto) {
-        Product entity = modelMapper.map(productDto, Product.class);
+        var entity = modelMapper.map(productDto, Product.class);
         entity.setCreatedAt(LocalDateTime.now());
         return modelMapper.map(productRepository.save(entity), ProductDto.class);
     }
 
     @Override
     public ProductDto updateProduct(ProductDto productDto) {
-        Product entity = modelMapper.map(productDto, Product.class);
+        var entity = modelMapper.map(productDto, Product.class);
         entity.setUpdatedAt(LocalDateTime.now());
         return modelMapper.map(productRepository.save(entity), ProductDto.class);
     }
