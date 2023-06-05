@@ -6,7 +6,6 @@ import com.sha.springbootmicroserviceproduct.Reposiyory.IProductRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -23,14 +22,12 @@ public class ProductServiceImp implements IProductService {
     @Override
     public ProductDto saveProduct(ProductDto productDto) {
         var entity = modelMapper.map(productDto, Product.class);
-        entity.setCreatedAt(LocalDateTime.now());
         return modelMapper.map(productRepository.save(entity), ProductDto.class);
     }
 
     @Override
     public ProductDto updateProduct(ProductDto productDto) {
         var entity = modelMapper.map(productDto, Product.class);
-        entity.setUpdatedAt(LocalDateTime.now());
         return modelMapper.map(productRepository.save(entity), ProductDto.class);
     }
 
