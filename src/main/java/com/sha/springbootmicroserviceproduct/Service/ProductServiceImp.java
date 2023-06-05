@@ -7,6 +7,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -41,6 +42,8 @@ public class ProductServiceImp implements IProductService {
     @Override
     public List<ProductDto> findAllProducts() {
         return productRepository.findAll().stream().
-                map(entity -> modelMapper.map(entity, ProductDto.class)).collect(Collectors.toList());
+                map(entity -> modelMapper.map(entity, ProductDto.class)).
+                collect(Collectors.toList()).stream().
+                sorted(Comparator.comparing(ProductDto::getId)).collect(Collectors.toList());
     }
 }
