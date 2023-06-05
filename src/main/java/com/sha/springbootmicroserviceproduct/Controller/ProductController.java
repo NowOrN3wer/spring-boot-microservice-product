@@ -2,6 +2,7 @@ package com.sha.springbootmicroserviceproduct.Controller;
 
 import com.sha.springbootmicroserviceproduct.Model.ProductDto;
 import com.sha.springbootmicroserviceproduct.Service.IProductService;
+import com.sun.istack.NotNull;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -32,6 +33,10 @@ public class ProductController {
 
     @GetMapping("getAll")
     ResponseEntity<?> getAllProducts() {
-        return new ResponseEntity<>(productService.findAllProducts(), HttpStatus.OK);
+        return new ResponseEntity<>(productService.getAll(), HttpStatus.OK);
+    }
+    @GetMapping("{id}")
+    ResponseEntity<?> getById(@PathVariable @NotNull Long id) {
+        return new ResponseEntity<>(productService.getById(id), HttpStatus.OK);
     }
 }

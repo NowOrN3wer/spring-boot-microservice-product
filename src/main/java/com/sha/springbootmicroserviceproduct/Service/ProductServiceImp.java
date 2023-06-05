@@ -37,10 +37,15 @@ public class ProductServiceImp implements IProductService {
     }
 
     @Override
-    public List<ProductDto> findAllProducts() {
+    public List<ProductDto> getAll() {
         return productRepository.findAll().stream().
                 map(entity -> modelMapper.map(entity, ProductDto.class)).
                 collect(Collectors.toList()).stream().
                 sorted(Comparator.comparing(ProductDto::getId)).collect(Collectors.toList());
+    }
+
+    @Override
+    public ProductDto getById(Long id) {
+        return modelMapper.map(productRepository.findById(id), ProductDto.class);
     }
 }
